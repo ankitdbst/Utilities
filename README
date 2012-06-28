@@ -1,2 +1,43 @@
 ## Some utility codes
 
+Ciphers
+-------------
+Class in python which encrypts and decrypts the following ciphers :
+- Caesar
+- Affine
+- Vigenere
+- Hill
+- RSA
+
+Graph
+-------------
+Graph class in cpp which implements the following Algorithms :
+- Floyd Warshall : Transistive closure of path matrix
+- DFS
+
+Huffmann
+-------------
+Implements the Huffman encryption technique on a given string
+
+Matrix
+-------------
+Matrix class in cpp implements the following matrix useful
+operations for any nxn matrix :
+- Cofactor
+- Determinant
+- Adjoint
+- Transpose
+- Addition
+- Subtraction
+- Inverse
+- Multiplication
+
+Tic Tac Toe
+-------------
+The traditional Tic Tac Toe game in python by implementing a game tree.
+
+Ternary Search Tree
+-------------
+This is a form of a trie (retrieval) data structure which is 
+space efficient than a normal trie and is useful for prefix string
+searches. eg. Output results from the prefix string typed by the user
