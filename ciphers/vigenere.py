@@ -5,6 +5,7 @@ from cipher import *
 class VigenereCipher(Cipher):
     """A Class to encrypt or decrpyt a affine cipher"""
     key = ""
+    keynum = 6 # default
     message = ""
 
     def init(self):
@@ -19,10 +20,12 @@ class VigenereCipher(Cipher):
 
     def shift(self, s, index, sign):
         """ shifts the input char by 'k' """
-        if not s.isspace() and not s.isdigit():
+        if s.isalpha():
             ch = self.case(s)
             k = ord(self.key[index % len(self.key)]) - ord(ch)
             s = chr(((ord(s) - ord(ch) + sign * k + self.mod) % self.mod) + ord(ch))
+        elif s.isdigit():
+            s = str((int(s) + sign*self.keynum) % 10);
         return s
 
     def encrypt(self):

@@ -7,13 +7,11 @@ from hill import *
 from rsa import *
 
 def main():
-    rs = RSA()
-    choice = rs.init()
-    options = {
-        1 : rs.encrypt,
-        2 : rs.decrypt
-    }
-    print options[choice]()
+    vg = VigenereCipher()
+    vg.key = "ankitgupta"
+    for line in open('/home/anks/.creds','r').readlines():
+        vg.message = line
+        print vg.decrypt(),
 
     return 0
 
