@@ -24,8 +24,17 @@ typedef vector< VI > VVI;
 #define RFOR(A,B,C) for(int A=B;A>=C;--A)
 #define PB(A,B) A.push_back(B);
 
+enum C
+{
+    WHITE, GRAY, BLACK
+};
+
 class Graph 
 {
+    VI p, d_time, f_time;
+    vector<C> color;
+    int time;
+    
     public:
         VVI trans_closure(VVI adj, int n);
         VVI floyd_warshall(VVI adj, int n);
