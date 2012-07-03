@@ -46,7 +46,6 @@ Bloom Filters
 -------------
 This is the space efficient probabilistic data structure to test whether an
 element is in the set. Used in spell checking.
-From a list of dictionaries it can return whether  
 
 Priority Queues
 ---------------
